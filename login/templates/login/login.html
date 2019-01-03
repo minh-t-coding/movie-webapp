@@ -1,6 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,5 +27,9 @@
                   </form>
                 </div>
               </div>
+
+        <!-- loads login static files -->
+        <script src = "{% static 'login/login.js' %}"> </script>
+        <link rel="stylesheet" type="text/css" href="{% static 'login/style.css' %}">
 </body>
 </html>
